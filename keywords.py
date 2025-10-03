@@ -10,9 +10,8 @@ def empty_function():
 
 
 def even_numbers(n):
-    for i in range(n + 1):
-        if i % 2 == 0:
-            yield i
+    for i in range(0, n + 1, 2):
+        yield i
 
 
 def test_max_number():
@@ -23,3 +22,5 @@ def test_max_number():
 
 
 test_max_number()
+print("Все тесты пройдены!")
+print(list(even_numbers(19)))
